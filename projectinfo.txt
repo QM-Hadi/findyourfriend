@@ -1,0 +1,24 @@
+
+
+
+stackholders 
+
+
+1. admin    
+2. user
+
+
+admin functionalities..
+1. category crud
+2. sub category crud
+3. see all events
+4. see all users
+5. see all analytics in app
+
+
+user functionalities
+
+1. signup and login
+2. events post participate
+3. comments and posts ko dekh sakta ha
+4. user events ko join kar sakta ha
