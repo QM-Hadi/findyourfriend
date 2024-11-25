@@ -46,6 +46,7 @@ export default function Categories() {
             <TableHead>Thumbnail</TableHead>
             <TableHead>Title</TableHead>
             <TableHead>Description</TableHead>
+            <TableHead>Date</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -62,6 +63,7 @@ export default function Categories() {
               </TableCell>
               <TableCell className="font-medium">{category.title}</TableCell>
               <TableCell>{category.description}</TableCell>
+              <TableCell>{category.date}</TableCell>
 
             </TableRow>
           ))}

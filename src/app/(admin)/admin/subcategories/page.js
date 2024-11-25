@@ -11,7 +11,10 @@ import {
 } from "@/components/ui/table"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { AddCategory } from "@/components/AddCategory/addcategory"
+import { AddSubCategory } from "@/components/AddSubCategory/addsubcategory"
+
+
+
 
 
 // Rename the array to avoid conflict with the component
@@ -29,6 +32,7 @@ const categoriesData = [
     location: "Karachi",
     thumbnail: "https://plus.unsplash.com/premium_photo-1671656349218-5218444643d8?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     date: new Date().toLocaleDateString(),
+    
   },
 ]
 
@@ -37,7 +41,7 @@ export default function Categories() {
     <div className="container mx-auto px-10">
       <div className="flex justify-between text-3xl font-bold">
         <h1>Categories</h1>
-        <AddCategory />
+        <AddSubCategory />
       </div>
       <Table>
         <TableCaption>A list of your recent sub categories.</TableCaption>
@@ -46,6 +50,7 @@ export default function Categories() {
             <TableHead>Thumbnail</TableHead>
             <TableHead>Title</TableHead>
             <TableHead>Description</TableHead>
+            <TableHead>Date</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -62,6 +67,7 @@ export default function Categories() {
               </TableCell>
               <TableCell className="font-medium">{category.title}</TableCell>
               <TableCell>{category.description}</TableCell>
+              <TableCell>{category.date}</TableCell>
 
             </TableRow>
           ))}
